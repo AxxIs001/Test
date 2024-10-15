@@ -1,6 +1,5 @@
 "use client";
-import Image from "next/image";
-import { useState, useEffect } from 'react';
+
 import React from 'react';
 import Counter from './count';
 import Visual from './visual';
@@ -13,9 +12,8 @@ import Visual from './visual';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between ">
       <div>
-        <h1>Counter App</h1>
         <Counter />
         <Visual />
       </div>

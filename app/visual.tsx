@@ -1,12 +1,19 @@
 const Visual = () => {
     return (
-        <div className="flex justify-center items-center min-h-screen">
-            <div className="bg-blue-500 shadow-lg rounded-lg p-10">
-                <img src="https://i.imgur.com/Uh6IvcO.png" alt="Bitcoin" className="mx-auto mb-4" />
-                <h1 className="text-white text-3xl font-bold">Bitcoin</h1>
-                <p className="text-white">The future of money</p>
+
+        <div className="relative bg-blue-600 text-white rounded-lg shadow-md p-6 flex space-x-6">
+            <div className="absolute -top-2 -left-2 bg-orange-400 text-xs w-6 h-6 rounded-full flex items-center justify-center shadow-lg">
+                P
             </div>
+            <div>
+                <h1 className="font-bold">Hello</h1>
+            </div>
+            <ul className="list-disc pl-5">
+                <li>Point 1</li>
+                <li>Point 2 xxxx</li>
+            </ul>
         </div>
+
     );
 };
 

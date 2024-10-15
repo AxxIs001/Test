@@ -11,7 +11,7 @@ const CountPage = () => {
         if (count < target) {
             const interval = setInterval(() => {
                 setCount((prev) => prev + 1);
-            }, 500);
+            }, 300);
             return () => clearInterval(interval);
         }
     }, [count, target]);
