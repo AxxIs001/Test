@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState, useEffect } from 'react';
 import React from 'react';
 import Counter from './count';
+import Visual from './visual';
 
 
 
@@ -16,6 +17,7 @@ export default function Home() {
       <div>
         <h1>Counter App</h1>
         <Counter />
+        <Visual />
       </div>
 
       {/*
