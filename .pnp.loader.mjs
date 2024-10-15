@@ -26,7 +26,7 @@ if (process.platform === `win32`) {
     }
   };
 }
-const contains = function(pathUtils, from, to) {
+const contains = function (pathUtils, from, to) {
   from = pathUtils.normalize(from);
   to = pathUtils.normalize(to);
   if (from === to)
@@ -2030,7 +2030,7 @@ if (!HAS_LAZY_LOADED_TRANSLATORS) {
   const binding = process.binding(`fs`);
   const originalReadFile = binding.readFileUtf8 || binding.readFileSync;
   if (originalReadFile) {
-    binding[originalReadFile.name] = function(...args) {
+    binding[originalReadFile.name] = function (...args) {
       try {
         return fs.readFileSync(args[0], {
           encoding: `utf8`,
@@ -2045,7 +2045,7 @@ if (!HAS_LAZY_LOADED_TRANSLATORS) {
     const originalfstat = binding2.fstat;
     const ZIP_MASK = 4278190080;
     const ZIP_MAGIC = 704643072;
-    binding2.fstat = function(...args) {
+    binding2.fstat = function (...args) {
       const [fd, useBigint, req] = args;
       if ((fd & ZIP_MASK) === ZIP_MAGIC && useBigint === false && req === void 0) {
         try {
